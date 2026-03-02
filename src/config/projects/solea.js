@@ -15,7 +15,7 @@ export const solea = {
   },
 
   header: {
-    brandLogo: `${base}/brand/ozyalcinlogo.jpg`,
+    brandLogo: `${base}/brand/ozyalcinlogo.webp`,
     phone1: "+90 (392) 650 2900",
     phone1Href: "tel:+903926502900",
     phone2: "+90 (548) 850 2900",
@@ -23,7 +23,7 @@ export const solea = {
   },
 
   hero: {
-    projectLogo: `${base}/brand/SOLEA.png`,
+    projectLogo: `${base}/brand/SOLEA.webp`,
     lead: "Akdeniz’i yeniden keşfedin",
     info: [
       { k: "Şehir", v: "Girne" },
@@ -32,10 +32,10 @@ export const solea = {
     ],
     bgImage: `${base}/proje/p14.webp`,
     strip: [
-      `${base}/hero/h01.jpg`,
-      `${base}/hero/h02.jpg`,
-      `${base}/hero/h03.jpg`,
-      `${base}/hero/h04.jpg`,
+      `${base}/hero/h01.webp`,
+      `${base}/proje/p17.webp`,
+      `${base}/hero/h03.webp`,
+      `${base}/hero/h04.webp`,
     ],
      miniCards: [
       { title: "Hızlı dönüş", text: "Genelde aynı gün dönüş." },
@@ -45,14 +45,14 @@ export const solea = {
   },
 
   overview: {
-    image: `${base}/hero/h05.png`,
+    image: `${base}/proje/p01.webp`,
     title: "Genel Bakış",
     chips: ["Girne / Ozanköy", "Türk Tapulu", "Butik Proje"],
     text: "Ozanköy’ün büyüleyici doğasında yükselen Solea, Akdeniz mimarisini zeytin ağaçlarının huzur veren atmosferiyle buluşturan özel bir yaşam projesidir. 24 villadan oluşan Türk koçanlı projede, doğal malzemelerle tasarlanmış geniş iç mekanlar ve ferah teraslar; modern konforu doğanın ışığı ve dinginliğiyle tamamlar.",
     kpis: [
       { val: "4.000 m²", lbl: "Proje alanı" },
       { val: "10 Villa", lbl: "A / B / C Tipi" },
-      { val: "6+1/4+1", lbl: "2 katlı plan" },
+      { val: "6+1/4+1", lbl: "2 ve 3 katlı plan" },
     ],
   },
 
@@ -80,7 +80,7 @@ export const solea = {
 
   plans: {
     title: "Vaziyet Planı",
-    image: `${base}/plan/plan.jpg`,
+    image: `${base}/plan/plan.webp`,
   },
 
   floorPlans: {
@@ -115,14 +115,14 @@ export const solea = {
     },
     a: {
       title: "A Tipi İç Mimari",
-      images: makeList("a", 27, "jpg", "a-tipi"),
+      images: makeList("a", 27, "webp", "a-tipi"),
     },
     c: {
       title: "B/C Tipi İç Mimari",
-      images: makeList("c", 22, "jpg", "c-tipi"),
+      images: makeList("c", 22, "webp", "c-tipi"),
     },
   },
   footer: {
-    footerBrandlogo: `${base}/brand/ozyalcinlogo.jpg`,
+    footerBrandlogo: `${base}/brand/ozyalcinlogo.webp`,
   }
 };

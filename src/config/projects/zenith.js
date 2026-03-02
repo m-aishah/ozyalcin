@@ -16,7 +16,7 @@ export const zenith = {
   },
 
   header: {
-    brandLogo: `${base}/brand/ozyalcinlogo.jpg`,
+    brandLogo: `${base}/brand/ozyalcinlogo.webp`,
     phone1: "+90 (392) 650 2900",
     phone1Href: "tel:+903926502900",
     phone2: "+90 (548) 850 2900",
@@ -24,19 +24,19 @@ export const zenith = {
   },
 
   hero: {
-    projectLogo: `${base}/brand/zenith_logo.png`,
+    projectLogo: `${base}/brand/zenith_logo.webp`,
     lead: "Zenith ile zirve bir hedef değil, bir yaşam biçimi.",
     info: [
       { k: "Şehir", v: "Girne" },
       { k: "Tapu", v: "Türk Tapulu" },
       { k: "Bölge", v: "Edremit" },
     ],
-    bgImage: `${base}/hero/h03.jpg`,
+    bgImage: `${base}/hero/genel.webp`,
     strip: [
-      `${base}/hero/h01.jpg`,
-      `${base}/hero/h02.jpg`,
-      `${base}/hero/h03.jpg`,
-      `${base}/hero/h04.jpg`,
+      `${base}/hero/h01.webp`,
+      `${base}/hero/h02.webp`,
+      `${base}/hero/h03.webp`,
+      `${base}/hero/h04.webp`,
     ],
      miniCards: [
       { title: "Hızlı dönüş", text: "Genelde aynı gün dönüş." },
@@ -46,11 +46,16 @@ export const zenith = {
   },
 
   form: {
-  scriptUrl: "https://script.google.com/macros/s/AKfycbwH2geqPRgkZtVI5cmnDKWhjy8JJBDzFSdTHSB9pUzJLFWnh-CxYNpsg-6es5F9O4MQdA/exec"
+  scriptUrl: "https://script.google.com/macros/s/AKfycbwH2geqPRgkZtVI5cmnDKWhjy8JJBDzFSdTHSB9pUzJLFWnh-CxYNpsg-6es5F9O4MQdA/exec",
+  budgetOptions: [
+    "£1.000.000 - £1.500.000",
+    "£1.750.000 - £2.000.000",
+    "£2.000.000 ve üzeri",
+  ],
 },
 
   overview: {
-    image: `${base}/hero/h02.jpg`,
+    image: `${base}/hero/genel.webp`,
     title: "Genel Bakış",
     chips: ["Girne/Edremit", "Türk Tapulu", "Butik Proje"],
     text: "Girne’nin zirvesinde konumlanan Zenith, Akdeniz’in maviliği ile dağ manzarasının eşsiz uyumunu bir araya getiren prestijli bir yaşam sunar. Toplam 18 villadan oluşan Türk koçanlı projede; geniş ve farklı tip villa seçeneklerinin yanı sıra şarap mahzeni, sauna, spor salonu ve jakuzi gibi ayrıcalıklı donatılarla konfor ve lüks üst seviyeye taşınır.",
@@ -79,25 +84,25 @@ export const zenith = {
 
   plans: {
     title: "Vaziyet Planı",
-    image: `${base}/plan/plan.png`,
+    image: `${base}/plan/plan.webp`,
   },
 
   sliders: {
     dis: {
       title: "Proje Fotoğrafları",
-        images: makeList("p", 20, "jpg", "proje"),
+        images: makeList("p", 20, "webp", "proje"),
     },
     a: {
       title: "A Tipi İç Mimari",
-      images: makeList("a", 41, "png", "a-tipi"),
+      images: makeList("a", 41, "webp", "a-tipi"),
     },
     c: {
       title: "B Tipi İç Mimari",
-      images: makeList("b", 27, "png", "c-tipi"),
+      images: makeList("b", 27, "webp", "c-tipi"),
     },
 
   },
   footer: {
-    footerBrandlogo: `${base}/brand/ozyalcinlogo.jpg`,
+    footerBrandlogo: `${base}/brand/ozyalcinlogo.webp`,
   }
 };

@@ -77,6 +77,12 @@
   grid-template-columns: 1fr;
   gap: 10px;
 }
+/* Zenith budget layout fix */
+.project--zenith .radioGrid label:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 5px);
+}
 
 @media (min-width: 560px) {
   .radioGrid {

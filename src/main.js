@@ -44,7 +44,37 @@ function setDataFull(id, value) {
    (fills HTML placeholders from activeProject)
    ========================= */
 
-function applyProjectConfig(p) {
+
+   function applyProjectConfig(p) {
+ //project by project budget options
+    function applyBudgetOptions(project) {
+  const wrap = document.getElementById("budgetOptions");
+  if (!wrap) return;
+
+  // Default (Casa + Solea)
+  const DEFAULT_BUDGETS = [
+    "£400.000 – £500.000",
+    "£600.000 – £700.000",
+    "£800.000 – £900.000",
+    "£1.000.000 ve üzeri",
+  ];
+  const options = project?.form?.budgetOptions?.length
+    ? project.form.budgetOptions
+    : DEFAULT_BUDGETS;
+
+  wrap.innerHTML = options
+    .map(
+      (text, idx) => `
+        <label class="radioPill">
+          <input type="radio" name="budget" value="${text}" ${idx === 0 ? "required" : ""} />
+          <span>${text}</span>
+        </label>
+      `
+    )
+    .join("");
+}
+ //active project budgets
+applyBudgetOptions(activeProject);
     // Meta (Tab title + description)
   if (p.meta?.title) {
     document.title = p.meta.title;
